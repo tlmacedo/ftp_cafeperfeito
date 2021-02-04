@@ -26,6 +26,7 @@ hs_err_pid*
 
 ### Python template
 # Byte-compiled / optimized / DLL files
+ftp_cafeperfeito/__init__.py
 __pycache__/
 *.py[cod]
 *$py.class
