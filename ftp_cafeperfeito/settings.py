@@ -78,15 +78,16 @@ DATABASES = {
     # },
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cafeperfeito',
 
-        'USER': 'cafeperfeito',
+        # 'NAME': 'cafeperfeito',
+        # 'USER': 'cafeperfeito',
+        # 'PASSWORD': 'Tlm487901',
+        # 'HOST': 'mysql.cafeperfeito.com.br',
+
+        'NAME': 'cafeperfeito_v2.03',
+        'USER': 'root',
         'PASSWORD': 'Tlm487901',
-        'HOST': 'mysql.cafeperfeito.com.br',
-
-        # 'USER': 'root',
-        # 'PASSWORD': 'Tlm$487901',
-        # 'HOST': '127.0.0.1',
+        'HOST': '127.0.0.1',
 
         'PORT': '3306',
         # 'TEST': {
@@ -133,7 +134,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
+
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
 
 STATIC_ROOT = '/home/cafeperfeito/www/static'
 

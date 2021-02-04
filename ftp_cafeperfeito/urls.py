@@ -16,9 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from ftp_cafeperfeito.views import IndexView
+from ftp_cafeperfeito.views import IndexView, MenuView, ServicesView, BlogView, AboutView, ContactView
 
 urlpatterns = [
-    path('', IndexView.as_view()),
+    path('', IndexView.as_view(), name='index'),
+    path('menu/', MenuView.as_view(), name='menu'),
+    path('services/', ServicesView.as_view(), name='services'),
+    path('blog/', BlogView.as_view(), name='blog'),
+    path('about/', AboutView.as_view(), name='about'),
+    path('contact/', ContactView.as_view(), name='contact'),
+
     path('admin/', admin.site.urls),
 ]
+
+# if settings.DEBUG:
+#     urlpatterns = urlpatterns + static(settings.STATIC_URL, documento_root=settings.STATIC_ROOT)
+#     urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
