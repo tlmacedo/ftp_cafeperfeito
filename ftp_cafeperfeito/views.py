@@ -2,52 +2,52 @@ from django.views.generic import TemplateView
 
 
 class AboutView(TemplateView):
-    template_name = 'cafeperfeito/about.html'
+    template_name = 'about.html'
 
 
 class BlogView(TemplateView):
-    template_name = 'cafeperfeito/blog.html'
+    template_name = 'blog.html'
 
 
 class BlogSingleView(TemplateView):
-    template_name = 'cafeperfeito/blog-single.html'
+    template_name = 'blog-single.html'
 
 
 class CartView(TemplateView):
-    template_name = 'cafeperfeito/cart.html'
+    template_name = 'cart.html'
 
 
 class CheckOutView(TemplateView):
-    template_name = 'cafeperfeito/checkout.html'
+    template_name = 'checkout.html'
 
 
 class ContactView(TemplateView):
-    template_name = 'cafeperfeito/contact.html'
+    template_name = 'contact.html'
 
 
 class GalleryView(TemplateView):
-    template_name = 'cafeperfeito/gallery.html'
+    template_name = 'gallery.html'
 
 
 class IndexView(TemplateView):
-    template_name = 'cafeperfeito/index.html'
+    template_name = 'index.html'
 
 
 class MenuView(TemplateView):
-    template_name = 'cafeperfeito/menu.html'
+    template_name = 'menu.html'
 
 
 class ProductSingleView(TemplateView):
-    template_name = 'cafeperfeito/product-single.html'
+    template_name = 'product-single.html'
 
 
 class RoomView(TemplateView):
-    template_name = 'cafeperfeito/room.html'
+    template_name = 'room.html'
 
 
 class ServicesView(TemplateView):
-    template_name = 'cafeperfeito/services.html'
+    template_name = 'services.html'
 
 
 class ShopView(TemplateView):
-    template_name = 'cafeperfeito/shop.html'
+    template_name = 'shop.html'
