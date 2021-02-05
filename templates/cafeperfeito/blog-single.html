@@ -1,9 +1,10 @@
-{% extends '_layouts/base.html' %}
+ {% extends 'cafeperfeito/_layouts/base.html' %}
 {% load static %}
 
 {% block content %}
     <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+        <div class="slider-item" style="background-image: url(../../static/cafeperfeito/images/bg_3.jpg);"
+             data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center">
@@ -29,7 +30,7 @@
                         enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta
                         architecto tempora.</p>
                     <p>
-                        <img src="images/image_1.jpg" alt="" class="img-fluid">
+                        <img src="{% static 'cafeperfeito/images/image_1.jpg' %}" alt="" class="img-fluid">
                     </p>
                     <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat
                         sunt
@@ -46,7 +47,7 @@
                         quasi
                         repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
                     <p>
-                        <img src="images/image_2.jpg" alt="" class="img-fluid">
+                        <img src="{% static 'cafeperfeito/images/image_2.jpg' %}" alt="" class="img-fluid">
                     </p>
                     <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo
                         quod,
@@ -100,7 +101,8 @@
                         <ul class="comment-list">
                             <li class="comment">
                                 <div class="vcard bio">
-                                    <img src="images/person_1.jpg.html" alt="Image placeholder">
+                                    <img src="{% static 'cafeperfeito/images/person_1.jpg.html' %}"
+                                         alt="Image placeholder">
                                 </div>
                                 <div class="comment-body">
                                     <h3>John Doe</h3>
@@ -114,7 +116,8 @@
                             </li>
                             <li class="comment">
                                 <div class="vcard bio">
-                                    <img src="images/person_1.jpg.html" alt="Image placeholder">
+                                    <img src="{% static 'cafeperfeito/images/person_1.jpg.html' %}"
+                                         alt="Image placeholder">
                                 </div>
                                 <div class="comment-body">
                                     <h3>John Doe</h3>
@@ -128,7 +131,8 @@
                                 <ul class="children">
                                     <li class="comment">
                                         <div class="vcard bio">
-                                            <img src="images/person_1.jpg.html" alt="Image placeholder">
+                                            <img src="{% static 'cafeperfeito/images/person_1.jpg.html' %}"
+                                                 alt="Image placeholder">
                                         </div>
                                         <div class="comment-body">
                                             <h3>John Doe</h3>
@@ -143,7 +147,8 @@
                                         <ul class="children">
                                             <li class="comment">
                                                 <div class="vcard bio">
-                                                    <img src="images/person_1.jpg.html" alt="Image placeholder">
+                                                    <img src="{% static 'cafeperfeito/images/person_1.jpg.html' %}"
+                                                         alt="Image placeholder">
                                                 </div>
                                                 <div class="comment-body">
                                                     <h3>John Doe</h3>
@@ -159,7 +164,8 @@
                                                 <ul class="children">
                                                     <li class="comment">
                                                         <div class="vcard bio">
-                                                            <img src="images/person_1.jpg.html" alt="Image placeholder">
+                                                            <img src="{% static 'cafeperfeito/images/person_1.jpg.html' %}"
+                                                                 alt="Image placeholder">
                                                         </div>
                                                         <div class="comment-body">
                                                             <h3>John Doe</h3>
@@ -181,7 +187,8 @@
                             </li>
                             <li class="comment">
                                 <div class="vcard bio">
-                                    <img src="images/person_1.jpg.html" alt="Image placeholder">
+                                    <img src="{% static 'cafeperfeito/images/person_1.jpg.html' %}"
+                                         alt="Image placeholder">
                                 </div>
                                 <div class="comment-body">
                                     <h3>John Doe</h3>
@@ -246,7 +253,8 @@
                     <div class="sidebar-box ftco-animate">
                         <h3>Recent Blog</h3>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                            <a class="blog-img mr-4"
+                               style="background-image: url(../../static/cafeperfeito/images/image_1.jpg);"></a>
                             <div class="text">
                                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
                                     blind texts</a></h3>
@@ -258,7 +266,8 @@
                             </div>
                         </div>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                            <a class="blog-img mr-4"
+                               style="background-image: url(../../static/cafeperfeito/images/image_2.jpg);"></a>
                             <div class="text">
                                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
                                     blind texts</a></h3>
@@ -270,7 +279,8 @@
                             </div>
                         </div>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
+                            <a class="blog-img mr-4"
+                               style="background-image: url(../../static/cafeperfeito/images/image_3.jpg);"></a>
                             <div class="text">
                                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the
                                     blind texts</a></h3>
