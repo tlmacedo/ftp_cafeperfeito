@@ -150,7 +150,7 @@ STATICFILES_DIRS = [
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/media/'
+# MEDIA_URL = '/media/'
 
 STATIC_ROOT = '/home/cafeperfeito/www/static'
 
