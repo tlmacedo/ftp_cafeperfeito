@@ -3,14 +3,14 @@
 
 {% block content %}
     <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image: url('{% static "cafeperfeito/images/bg_3.jpg" %}');"
+        <div class="slider-item" style="background-image: url('{% static "cafeperfeito/img/bg_3.jpg" %}');"
              data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center">
                     <div class="col-md-7 col-sm-12 text-center ftco-animate">
                         <h1 class="mb-3 mt-5 bread">Product Detail</h1>
-                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span>
+                        <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Home</a></span>
                             <span>Product Detail</span></p>
                     </div>
                 </div>
@@ -21,8 +21,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-5 ftco-animate">
-                    <a href="{% static 'cafeperfeito/images/menu-2.jpg' %}" class="image-popup">
-                        <img src="{% static 'cafeperfeito/images/menu-2.jpg' %}" class="img-fluid"
+                    <a href="{% static 'cafeperfeito/img/menu-2.jpg' %}" class="image-popup">
+                        <img src="{% static 'cafeperfeito/img/menu-2.jpg' %}" class="img-fluid"
                              alt="Colorlib Template"></a>
                 </div>
                 <div class="col-lg-6 product-details pl-md-5 ftco-animate">
@@ -91,7 +91,7 @@
                 <div class="col-md-3">
                     <div class="menu-entry">
                         <a href="#" class="img"
-                           style="background-image: url('{% static "cafeperfeito/images/menu-1.jpg" %}');"></a>
+                           style="background-image: url('{% static "cafeperfeito/img/menu-1.jpg" %}');"></a>
                         <div class="text text-center pt-4">
                             <h3><a href="#">Coffee Capuccino</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>
@@ -103,7 +103,7 @@
                 <div class="col-md-3">
                     <div class="menu-entry">
                         <a href="#" class="img"
-                           style="background-image: url('{% static "cafeperfeito/images/menu-2.jpg" %}');"></a>
+                           style="background-image: url('{% static "cafeperfeito/img/menu-2.jpg" %}');"></a>
                         <div class="text text-center pt-4">
                             <h3><a href="#">Coffee Capuccino</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>
@@ -115,7 +115,7 @@
                 <div class="col-md-3">
                     <div class="menu-entry">
                         <a href="#" class="img"
-                           style="background-image: url('{% static "cafeperfeito/images/menu-3.jpg" %}');"></a>
+                           style="background-image: url('{% static "cafeperfeito/img/menu-3.jpg" %}');"></a>
                         <div class="text text-center pt-4">
                             <h3><a href="#">Coffee Capuccino</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>
@@ -127,7 +127,7 @@
                 <div class="col-md-3">
                     <div class="menu-entry">
                         <a href="#" class="img"
-                           style="background-image: url('{% static "cafeperfeito/images/menu-4.jpg" %}');"></a>
+                           style="background-image: url('{% static "cafeperfeito/img/menu-4.jpg" %}');"></a>
                         <div class="text text-center pt-4">
                             <h3><a href="#">Coffee Capuccino</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>

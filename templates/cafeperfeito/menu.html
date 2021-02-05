@@ -4,14 +4,15 @@
 {% block content %}
 
     <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image: url('{% static "cafeperfeito/images/bg_3.jpg" %}');"
+        <div class="slider-item" style="background-image: url('{% static "cafeperfeito/img/bg_3.jpg" %}');"
              data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center">
                     <div class="col-md-7 col-sm-12 text-center ftco-animate">
                         <h1 class="mb-3 mt-5 bread">Our Menu</h1>
-                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Menu</span>
+                        <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'index' %}">Home</a></span>
+                            <span>Menu</span>
                         </p>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
                     <h3 class="mb-5 heading-pricing ftco-animate">Starter</h3>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dish-1.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dish-1.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Cornish - Mackerel</span></h3>
@@ -108,7 +109,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dish-2.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dish-2.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Roasted Steak</span></h3>
@@ -121,7 +122,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dish-3.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dish-3.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Seasonal Soup</span></h3>
@@ -134,7 +135,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dish-4.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dish-4.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Chicken Curry</span></h3>
@@ -150,7 +151,7 @@
                     <h3 class="mb-5 heading-pricing ftco-animate">Main Dish</h3>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dish-5.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dish-5.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Sea Trout</span></h3>
@@ -163,7 +164,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dish-6.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dish-6.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Roasted Beef</span></h3>
@@ -176,7 +177,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dish-7.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dish-7.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Butter Fried Chicken</span></h3>
@@ -205,7 +206,7 @@
                     <h3 class="mb-5 heading-pricing ftco-animate">Desserts</h3>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dessert-1.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dessert-1.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Cornish - Mackerel</span></h3>
@@ -218,7 +219,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dessert-2.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dessert-2.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Roasted Steak</span></h3>
@@ -231,7 +232,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dessert-3.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dessert-3.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Seasonal Soup</span></h3>
@@ -244,7 +245,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/dessert-4.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/dessert-4.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Chicken Curry</span></h3>
@@ -260,7 +261,7 @@
                     <h3 class="mb-5 heading-pricing ftco-animate">Drinks</h3>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/drink-5.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/drink-5.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Sea Trout</span></h3>
@@ -273,7 +274,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/drink-6.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/drink-6.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Roasted Beef</span></h3>
@@ -286,7 +287,7 @@
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
                         <div class="img"
-                             style="background-image: url('{% static "cafeperfeito/images/drink-7.jpg" %}');"></div>
+                             style="background-image: url('{% static "cafeperfeito/img/drink-7.jpg" %}');"></div>
                         <div class="desc pl-3">
                             <div class="d-flex text align-items-center">
                                 <h3><span>Butter Fried Chicken</span></h3>
@@ -348,7 +349,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dish-1.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dish-1.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Grilled Beef</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -362,7 +363,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dish-2.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dish-2.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Grilled Beef</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -376,7 +377,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dish-3.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dish-3.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Grilled Beef</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -390,7 +391,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dish-4.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dish-4.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Grilled Beef</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -404,7 +405,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dish-5.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dish-5.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Grilled Beef</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -418,7 +419,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dish-6.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dish-6.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Grilled Beef</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -437,7 +438,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/drink-1.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/drink-1.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Lemonade Juice</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -451,7 +452,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/drink-2.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/drink-2.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Pineapple Juice</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -465,7 +466,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/drink-3.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/drink-3.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Soda Drinks</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -479,7 +480,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/drink-4.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/drink-4.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Lemonade Juice</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -493,7 +494,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/drink-5.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/drink-5.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Pineapple Juice</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -507,7 +508,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/drink-6.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/drink-6.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Soda Drinks</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -526,7 +527,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dessert-1.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dessert-1.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Hot Cake Honey</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -540,7 +541,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dessert-2.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dessert-2.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Hot Cake Honey</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -554,7 +555,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dessert-3.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dessert-3.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Hot Cake Honey</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries
@@ -568,7 +569,7 @@
                                         <div class="col-md-4 text-center">
                                             <div class="menu-wrap">
                                                 <a href="#" class="menu-img img mb-4"
-                                                   style="background-image: url('{% static "cafeperfeito/images/dessert-4.jpg" %}');"></a>
+                                                   style="background-image: url('{% static "cafeperfeito/img/dessert-4.jpg" %}');"></a>
                                                 <div class="text">
                                                     <h3><a href="#">Hot Cake Honey</a></h3>
                                                     <p>Far far away, behind the word mountains, far from the countries

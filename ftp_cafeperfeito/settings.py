@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'w&_2zn@cexbf1d=os_fi-vmzshi3o@x-qnzq*93!qu^58%%&g#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.cafeperfeito.com.br', 'cafeperfeito.com.br', '127.0.0.1']
 
@@ -43,10 +43,10 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-    'ftp_cafeperfeito',
+
 ]
 
-INSTALLED_APPS = DEFAULTS_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS = DEFAULTS_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -71,6 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -89,15 +90,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
 
-        # 'NAME': 'cafeperfeito',
-        # 'USER': 'cafeperfeito',
-        # 'PASSWORD': 'Tlm487901',
-        # 'HOST': 'mysql.cafeperfeito.com.br',
-
-        'NAME': 'cafeperfeito_v2.03',
-        'USER': 'root',
+        'NAME': 'cafeperfeito',
+        'USER': 'cafeperfeito',
         'PASSWORD': 'Tlm487901',
-        'HOST': '127.0.0.1',
+        'HOST': 'mysql.cafeperfeito.com.br',
+
+        # 'NAME': 'cafeperfeito_v2.03',
+        # 'USER': 'root',
+        # 'PASSWORD': 'Tlm487901',
+        # 'HOST': '127.0.0.1',
 
         'PORT': '3306',
         # 'TEST': {
@@ -150,7 +151,7 @@ STATICFILES_DIRS = [
 
 STATIC_URL = '/static/'
 
-# MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
 
 STATIC_ROOT = '/home/cafeperfeito/www/static'
 

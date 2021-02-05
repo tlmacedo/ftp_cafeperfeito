@@ -16,15 +16,23 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from ftp_cafeperfeito.views import IndexView, MenuView, ServicesView, BlogView, AboutView, ContactView
+from ftp_cafeperfeito.views import IndexView, MenuView, ServicesView, BlogView, AboutView, ContactView, ShopView, \
+    ProductSingleView, RoomView, CheckOutView, BlogSingleView, CartView, GalleryView
 
 urlpatterns = [
+    path('about/', AboutView.as_view(), name='about'),
+    path('blog/', BlogView.as_view(), name='blog'),
+    path('blog-single/', BlogSingleView.as_view(), name='blog-single'),
+    path('cart/', CartView.as_view(), name='cart'),
+    path('checkout/', CheckOutView.as_view(), name='checkout'),
+    path('contact/', ContactView.as_view(), name='contact'),
+    path('gallery/', GalleryView.as_view(), name='gallery'),
     path('', IndexView.as_view(), name='index'),
     path('menu/', MenuView.as_view(), name='menu'),
+    path('product-single/', ProductSingleView.as_view(), name='product-single'),
+    path('room/', RoomView.as_view(), name='room'),
     path('services/', ServicesView.as_view(), name='services'),
-    path('blog/', BlogView.as_view(), name='blog'),
-    path('about/', AboutView.as_view(), name='about'),
-    path('contact/', ContactView.as_view(), name='contact'),
+    path('shop/', ShopView.as_view(), name='shop'),
 
     path('admin/', admin.site.urls),
 ]
