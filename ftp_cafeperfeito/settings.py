@@ -29,7 +29,7 @@ ALLOWED_HOSTS = ['www.cafeperfeito.com.br', '127.0.0.1']
 
 # Application definition
 
-INSTALLED_APPS = [
+DEFAULTS_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,6 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+THIRD_PARTY_APPS = [
+
+]
+
+LOCAL_APPS = [
+
+]
+
+INSTALLED_APPS = DEFAULTS_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -79,15 +89,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
 
-        # 'NAME': 'cafeperfeito',
-        # 'USER': 'cafeperfeito',
-        # 'PASSWORD': 'Tlm487901',
-        # 'HOST': 'mysql.cafeperfeito.com.br',
-
-        'NAME': 'cafeperfeito_v2.03',
-        'USER': 'root',
+        'NAME': 'cafeperfeito',
+        'USER': 'cafeperfeito',
         'PASSWORD': 'Tlm487901',
-        'HOST': '127.0.0.1',
+        'HOST': 'mysql.cafeperfeito.com.br',
+
+        # 'NAME': 'cafeperfeito_v2.03',
+        # 'USER': 'root',
+        # 'PASSWORD': 'Tlm487901',
+        # 'HOST': '127.0.0.1',
 
         'PORT': '3306',
         # 'TEST': {
