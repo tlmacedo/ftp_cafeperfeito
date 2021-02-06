@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3c06adb9-6b2a-429e-bc56-9d211a068614" name="cafeperfeito.com.br" url="http://www.cafeperfeito.com.br">
+        <fileTransfer rootFolder="/home/cafeperfeito" accessType="SFTP" host="cafeperfeito.com.br" port="22" sshConfigId="76e13b63-677a-4afa-aee5-abbe5019ddf9" sshConfig="cafeperfeito@cafeperfeito.com.br:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

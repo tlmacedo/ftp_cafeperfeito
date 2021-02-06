@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="cafeperfeito.com.br" id="76e13b63-677a-4afa-aee5-abbe5019ddf9" keyPath="$USER_HOME$/.ssh/id_rsa" port="22" nameFormat="DESCRIPTIVE" username="cafeperfeito" />
+    </configs>
+  </component>
+</project>
