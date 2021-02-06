@@ -16,13 +16,10 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
-
-from ftp_cafeperfeito.views import IndexView
+from django.urls import path, include
 
 urlpatterns = [
-    # path('', include('cafeperfeito.urls')),
-    path('', IndexView.as_view(), name='index'),
+    path('', include('cafeperfeito.urls')),
     path('admin/', admin.site.urls),
 ]
 

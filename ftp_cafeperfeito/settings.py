@@ -44,7 +44,6 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     'cafeperfeito',
-    'ftp_cafeperfeito',
 ]
 
 INSTALLED_APPS = DEFAULTS_APPS + LOCAL_APPS + THIRD_PARTY_APPS
