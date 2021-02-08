@@ -20,7 +20,7 @@ from django.urls import path
 
 from .views import ManutencaoView
 
-app_name = 'cafeperfeito'
+# app_name = 'cafeperfeito'
 
 urlpatterns = [
     # path('', include('cafeperfeito.urls')),
