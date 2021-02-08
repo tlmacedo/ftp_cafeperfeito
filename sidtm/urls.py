@@ -17,7 +17,7 @@ from django.urls import path
 
 from sidtm.views import IndexView
 
-app_name = 'cafeperfeito'
+app_name = 'sidtm'
 
 urlpatterns = [
     path('sidtm/', IndexView.as_view(), name='index'),
