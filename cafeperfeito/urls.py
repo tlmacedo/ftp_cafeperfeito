@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import IndexView
+from ftp_cafeperfeito.views import IndexView
 
 app_name = 'cafeperfeito'
 
