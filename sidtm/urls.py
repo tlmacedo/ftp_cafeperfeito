@@ -20,7 +20,7 @@ from sidtm.views import IndexView
 app_name = 'cafeperfeito'
 
 urlpatterns = [
-    path('', IndexView.as_view(), name='index'),
+    path('sidtm/', IndexView.as_view(), name='index'),
 ]
 
 # if settings.DEBUG:

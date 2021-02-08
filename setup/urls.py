@@ -23,7 +23,7 @@ from .views import ManutencaoView
 # app_name = 'cafeperfeito'
 
 urlpatterns = [
-    path('', include('cafeperfeito.urls')),
+    path('', include('sidtm.urls')),
     path('', ManutencaoView.as_view(), name='manutencao'),
     # path('', IndexView.as_view(), name='index'),
     path('admin/', admin.site.urls),
