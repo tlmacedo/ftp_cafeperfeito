@@ -16,16 +16,15 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
 
-from .views import ManutencaoView
+from .views import IndexView
 
-# app_name = 'cafeperfeito'
 
 urlpatterns = [
     # path('', include('sidtm.urls')),
-    path('', ManutencaoView.as_view(), name='manutencao'),
-    # path('', IndexView.as_view(), name='index'),
+    # path('', ManutencaoView.as_view(), name='manutencao'),
+    path('', IndexView.as_view(), name='index'),
     path('admin/', admin.site.urls),
 ]
 
