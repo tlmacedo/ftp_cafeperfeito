@@ -4,7 +4,8 @@
 <head>
 
     <title>{% block title %}Café perfeito{% endblock %}</title>
-    <link rel="shortcut icon" href="{% static 'setup/img/sistema/Favicons/favicon.ico' %}">
+    <link rel="shortcut icon"
+          href="{% static 'setup/img/sistema/Favicons/../../../static/setup/img/sistema/favicon.ico' %}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -24,8 +25,7 @@
     <link rel="stylesheet" href="{% static 'setup/css/style.css' %}">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<nav class="navbar navbar-expand-lg navbar-light ftco_navbar bg-transparent ftco-navbar-light" id="ftco-navbar">
     <a href="https://bit.ly/3oWQ6yN"
        target="_blank"
        style="position:fixed;bottom:20px;right:30px;">
@@ -35,7 +35,9 @@
                   fill="#FAFAFA"/></svg>
     </a>
     <div class="container">
-        <a class="navbar-brand" href="{% url 'index' %}">Café<small>perfeito</small></a>
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'setup/img/sistema/logo-ligth3.png' %}" height="30">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
@@ -43,10 +45,10 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Itens</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Produtos</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Quem somos</a></li>
                 {#                <li class="nav-item dropdown">#}
                 {#                    <a class="nav-link dropdown-toggle" href="room.html" id="dropdown04" data-toggle="dropdown"#}
                 {#                       aria-haspopup="true" aria-expanded="false">Shop</a>#}
@@ -57,10 +59,11 @@
                 {#                        <a class="dropdown-item" href="checkout.html">Checkout</a>#}
                 {#                    </div>#}
                 {#                </li>#}
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <li class="nav-item cart"><a href="#" class="nav-link"><span
-                        class="icon icon-shopping_cart"></span><span
-                        class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                {#                <li class="nav-item cart"><a href="#" class="nav-link"><span#}
+                {#                        class="icon icon-shopping_cart"></span><span#}
+                {#                        class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a>#}
+                {#                </li>#}
             </ul>
         </div>
     </div>
