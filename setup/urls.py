@@ -16,15 +16,15 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from .views import IndexView
-
 
 urlpatterns = [
     # path('', include('sidtm.urls')),
     # path('', ManutencaoView.as_view(), name='manutencao'),
     path('', IndexView.as_view(), name='index'),
+    path('construtech/', include('construtech.urls')),
     path('admin/', admin.site.urls),
 ]
 

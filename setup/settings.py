@@ -90,15 +90,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
 
-        'NAME': 'cafeperfeito',
-        'USER': 'cafeperfeito',
-        'PASSWORD': 'Tlm487901',
-        'HOST': 'mysql.cafeperfeito.com.br',
-
-        # 'NAME': 'cafeperfeito_v2.03',
-        # 'USER': 'root',
+        # 'NAME': 'cafeperfeito',
+        # 'USER': 'cafeperfeito',
         # 'PASSWORD': 'Tlm487901',
-        # 'HOST': '127.0.0.1',
+        # 'HOST': 'mysql.cafeperfeito.com.br',
+
+        'NAME': 'cafeperfeito_v2.03',
+        'USER': 'root',
+        'PASSWORD': 'Tlm487901',
+        'HOST': '127.0.0.1',
 
         'PORT': '3306',
         # 'TEST': {
