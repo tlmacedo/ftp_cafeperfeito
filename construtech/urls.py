@@ -4,6 +4,8 @@ from django.urls import path, include
 from .views import IndexView, AulaDeAutomacaoView, CarrinhoView, ContatoView, MoveUpConstrutechView, PlanosEPrecosView, \
     SimuladorView
 
+app_name = 'construtech'
+
 urlpatterns = [
     # path('', include('sidtm.urls')),
     # path('', ManutencaoView.as_view(), name='manutencao'),

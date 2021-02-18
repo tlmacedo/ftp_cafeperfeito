@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title>{% block title %}myBinary{% endblock %}</title>
+    <link rel="shortcut icon"
+          href="{% static 'setup/img/sistema/favicon.ico' %}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'setup/css/ftp_cafeperfeito.css' %}" rel="stylesheet">
+</head>
+<body>
+
+
+{% block content %}{% endblock %}
+
+
+{% block extra-script %}{% endblock %}
+
+
+<script src="{% static 'bootstrap/jquery/jQuery-3.5.1.slim.js' %}" type="text/javascript"/>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}" type="text/javascript"/>
+
+
+</body>
+</html>
