@@ -128,6 +128,12 @@
     z-index: 0;
 }
 
+@media (max-width: 992px) {
+    .carousel-item {
+        height: 500px;
+    }
+}
+
 .carousel-inner .carousel-text-msg {
     position: relative;
 }
@@ -145,12 +151,6 @@
     .carousel-inner .carousel-text-msg .subheading {
         margin-top: 18%;
         font-size: 20px;
-    }
-}
-
-@media (max-width: 992px) {
-    .carousel-item {
-        height: 240px;
     }
 }
 
