@@ -41,12 +41,12 @@
     window.performance.measure = performance.measure || noop;
     if ("now" in window.performance === false) {
       var nowOffset = Date.now();
-      if (performance.timing && performance.timing.navigationStart) {
-        nowOffset = performance.timing.navigationStart;
-      }
-      window.performance.now = function now() {
-        return Date.now() - nowOffset;
-      };
+        if (performance.timing && performance.timing.navigationStart) {
+            nowOffset = performance.timing.navigationStart;
+        }
+        window.performance.now = function now() {
+            return Date.now() - nowOffset;
+        };
     }
   })();
   </script>
@@ -4958,12 +4958,13 @@
     <meta http-equiv="X-Wix-Published-Version" content="159"/>
 
 
-
     <meta http-equiv="etag" content="bug"/>
 
-<!-- render-head end -->
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/activePopup.dc2d805a.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/wix-code-sdk-providers.87a7d0d2.chunk.min.js" async=""></script>
+    <!-- render-head end -->
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/activePopup.dc2d805a.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/wix-code-sdk-providers.87a7d0d2.chunk.min.js"
+            async=""></script>
 <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/imageZoom.e126caef.chunk.min.js" async=""></script>
 <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/loginSocialBar.7f4a6885.chunk.min.js" async=""></script>
 <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/navigation.ade72f50.chunk.min.js" async=""></script>
@@ -4972,16 +4973,26 @@
 <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/pageScroll.facaaaf4.chunk.min.js" async=""></script>
 <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/platformPubsub.0547e420.chunk.min.js" async=""></script>
 <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/protectedPages.c99d684f.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/scrollRestoration.2e2f9e22.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.085355b5.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.0ccdac59.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/sosp.2f345544.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/tpa.5c3bbaf6.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/windowScroll.062810d5.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/platform.c373c3ed.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/autoDisplayLightbox.7e11e60d.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/backgroundScrub.bc6c616b.chunk.min.js" async=""></script>
-<script src="https://static.parastorage.com/services/wix-thunderbolt/dist/landingPage.177e045c.chunk.min.js" async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/scrollRestoration.2e2f9e22.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/scrollToAnchor.085355b5.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/siteMembers.0ccdac59.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/sosp.2f345544.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/tpa.5c3bbaf6.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/windowScroll.062810d5.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/platform.c373c3ed.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/autoDisplayLightbox.7e11e60d.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/backgroundScrub.bc6c616b.chunk.min.js"
+            async=""></script>
+    <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/landingPage.177e045c.chunk.min.js"
+            async=""></script>
     <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/onloadCompsBehaviors.4f9887fc.chunk.min.js"
             async=""></script>
     <script src="https://static.parastorage.com/services/wix-thunderbolt/dist/pageAnchors.fa9849ad.chunk.min.js"
@@ -7042,16 +7053,17 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
 }
 @font-face {
 font-display: block;
-font-family: 'Work Sans';
-font-style: normal;
-font-weight: 700;
-src: local('Work Sans Bold'), local('WorkSans-Bold'), url(https://fonts.gstatic.com/s/worksans/v5/QGYpz_wNahGAdqQ43Rh3x4X8lthNy_r-K7mV.woff2) format('woff2');
-unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Work Sans Bold'), local('WorkSans-Bold'), url(https://fonts.gstatic.com/s/worksans/v5/QGYpz_wNahGAdqQ43Rh3x4X8lthNy_r-K7mV.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
-font-display: block;
-font-family: 'Work Sans';
-font-style: normal;
+    font-display: block;
+    font-family: 'Work Sans';
+    font-style: normal;
     font-weight: 700;
     src: local('Work Sans Bold'), local('WorkSans-Bold'), url(https://fonts.gstatic.com/s/worksans/v5/QGYpz_wNahGAdqQ43Rh3x4X8mNhNy_r-Kw.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
