@@ -25,7 +25,6 @@ urlpatterns = [
     path('', ManutencaoView.as_view(), name='manutencao'),
     # path('', IndexView.as_view(), name='index'),
     path('binary/', include('binary.urls')),
-    path('construtech/', include('construtech.urls')),
     path('admin/', admin.site.urls),
 ]
 
